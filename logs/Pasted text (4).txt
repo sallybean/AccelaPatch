@@ -1,0 +1,432 @@
+-p   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2
+      0x7fffdd233000     0x7fffdd2c0000    0x8d000     0xa000  r-xp   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2
+      0x7fffdd2c0000     0x7fffdd2cf000     0xf000    0x97000  r--p   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2
+      0x7fffdd2cf000     0x7fffdd2d7000     0x8000    0xa5000  r--p   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2
+      0x7fffdd2d7000     0x7fffdd2d8000     0x1000    0xad000  rw-p   /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2
+      0x7fffdd2d8000     0x7fffdd2da000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+      0x7fffdd2da000     0x7fffdd2e1000     0x7000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdd2e1000     0x7fffdd2e2000     0x1000     0x9000  r--p   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+      0x7fffdd2e2000     0x7fffdd2e3000     0x1000     0x9000  r--p   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+      0x7fffdd2e3000     0x7fffdd2e4000     0x1000     0xa000  rw-p   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+      0x7fffdd2e4000     0x7fffdd2e7000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1
+      0x7fffdd2e7000     0x7fffdd304000    0x1d000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1
+      0x7fffdd304000     0x7fffdd307000     0x3000    0x20000  r--p   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1
+      0x7fffdd307000     0x7fffdd309000     0x2000    0x22000  r--p   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1
+      0x7fffdd309000     0x7fffdd30a000     0x1000    0x24000  rw-p   /usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1
+      0x7fffdd30a000     0x7fffdd30c000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libthai.so.0.3.1
+      0x7fffdd30c000     0x7fffdd310000     0x4000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libthai.so.0.3.1
+      0x7fffdd310000     0x7fffdd313000     0x3000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libthai.so.0.3.1
+      0x7fffdd313000     0x7fffdd314000     0x1000     0x8000  r--p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libthai.so.0.3.1
+      0x7fffdd314000     0x7fffdd315000     0x1000     0x9000  rw-p   /usr/lib/x86_64-linux-gnu/libthai.so.0.3.1
+      0x7fffdd315000     0x7fffdd316000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+      0x7fffdd316000     0x7fffdd317000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+      0x7fffdd317000     0x7fffdd318000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+      0x7fffdd318000     0x7fffdd319000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+      0x7fffdd319000     0x7fffdd31a000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+      0x7fffdd31a000     0x7fffdd31c000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+      0x7fffdd31c000     0x7fffdd323000     0x7000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+      0x7fffdd323000     0x7fffdd325000     0x2000     0x9000  r--p   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+      0x7fffdd325000     0x7fffdd326000     0x1000     0xa000  r--p   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+      0x7fffdd326000     0x7fffdd327000     0x1000     0xb000  rw-p   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdd327000     0x7fffdd328000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+      0x7fffdd328000     0x7fffdd329000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+      0x7fffdd329000     0x7fffdd32a000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+      0x7fffdd32a000     0x7fffdd32b000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+      0x7fffdd32b000     0x7fffdd32c000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+      0x7fffdd32c000     0x7fffdd32e000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+      0x7fffdd32e000     0x7fffdd334000     0x6000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+      0x7fffdd334000     0x7fffdd336000     0x2000     0x8000  r--p   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+      0x7fffdd336000     0x7fffdd337000     0x1000     0x9000  r--p   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+      0x7fffdd337000     0x7fffdd338000     0x1000     0xa000  rw-p   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+      0x7fffdd338000     0x7fffdd33c000     0x4000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+      0x7fffdd33c000     0x7fffdd347000     0xb000     0x4000  r-xp   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libXext.so.6.4.0
+      0x7fffdd347000     0x7fffdd34a000     0x3000     0xf000  r--p   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+      0x7fffdd34a000     0x7fffdd34b000     0x1000    0x11000  r--p   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+      0x7fffdd34b000     0x7fffdd34c000     0x1000    0x12000  rw-p   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+      0x7fffdd34c000     0x7fffdd34e000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0
+      0x7fffdd34e000     0x7fffdd350000     0x2000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0
+      0x7fffdd350000     0x7fffdd351000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0
+      0x7fffdd351000     0x7fffdd352000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0
+      0x7fffdd352000     0x7fffdd356000     0x4000     0x5000  rw-p   /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0
+      0x7fffdd356000     0x7fffdd35b000     0x5000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0
+      0x7fffdd35b000     0x7fffdd361000     0x6000     0x5000  r-xp   /usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0
+      0x7fffdd361000     0x7fffdd363000     0x2000     0xb000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdd363000     0x7fffdd365000     0x2000     0xd000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0
+      0x7fffdd365000     0x7fffdd366000     0x1000     0xf000  rw-p   /usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0
+      0x7fffdd366000     0x7fffdd372000     0xc000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+      0x7fffdd372000     0x7fffdd38c000    0x1a000     0xc000  r-xp   /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+      0x7fffdd38c000     0x7fffdd39f000    0x13000    0x26000  r--p   /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+      0x7fffdd39f000     0x7fffdd3a0000     0x1000    0x39000  r--p   /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+      0x7fffdd3a0000     0x7fffdd3a2000     0x2000    0x3a000  rw-p   /usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0
+      0x7fffdd3a2000     0x7fffdd3a5000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+      0x7fffdd3a5000     0x7fffdd3b1000     0xc000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+      0x7fffdd3b1000     0x7fffdd3b3000     0x2000     0xf000  r--p   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+      0x7fffdd3b3000     0x7fffdd3b4000     0x1000    0x11000  r--p   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+      0x7fffdd3b4000     0x7fffdd3b5000     0x1000    0x12000  rw-p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libXi.so.6.1.0
+      0x7fffdd3b5000     0x7fffdd415000    0x60000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0
+      0x7fffdd415000     0x7fffdd47b000    0x66000    0x60000  r-xp   /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0
+      0x7fffdd47b000     0x7fffdd4c9000    0x4e000    0xc6000  r--p   /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0
+      0x7fffdd4c9000     0x7fffdd4d1000     0x8000   0x113000  r--p   /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0
+      0x7fffdd4d1000     0x7fffdd4d8000     0x7000   0x11b000  rw-p   /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0
+      0x7fffdd4d8000     0x7fffdd4da000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0
+      0x7fffdd4da000     0x7fffdd4de000     0x4000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0
+      0x7fffdd4de000     0x7fffdd4f4000    0x16000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0
+      0x7fffdd4f4000     0x7fffdd4f5000     0x1000    0x1c000  r--p   /usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0
+      0x7fffdd4f5000     0x7fffdd4f6000     0x1000    0x1d000  rw-p   /usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0
+      0x7fffdd4f6000     0x7fffdd4fe000     0x8000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdd4fe000     0x7fffdd50b000     0xd000     0x8000  r-xp   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1
+      0x7fffdd50b000     0x7fffdd50f000     0x4000    0x15000  r--p   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1
+      0x7fffdd50f000     0x7fffdd510000     0x1000    0x19000  r--p   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1
+      0x7fffdd510000     0x7fffdd511000     0x1000    0x1a000  rw-p   /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1
+      0x7fffdd511000     0x7fffdd520000     0xf000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0
+      0x7fffdd520000     0x7fffdd557000    0x37000     0xf000  r-xp   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0
+      0x7fffdd557000     0x7fffdd570000    0x19000    0x46000  r--p   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0
+      0x7fffdd570000     0x7fffdd573000     0x3000    0x5e000  r--p   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0
+      0x7fffdd573000     0x7fffdd574000     0x1000    0x61000  rw-p   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0
+      0x7fffdd574000     0x7fffdd5ad000    0x39000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0
+      0x7fffdd5ad000     0x7fffdd6c4000   0x117000    0x39000  r-xp   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0
+      0x7fffdd6c4000     0x7fffdd739000    0x75000   0x150000  r--p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libgio-2.0.so.0.8000.0
+      0x7fffdd739000     0x7fffdd741000     0x8000   0x1c4000  r--p   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0
+      0x7fffdd741000     0x7fffdd742000     0x1000   0x1cc000  rw-p   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0
+      0x7fffdd742000     0x7fffdd744000     0x2000        0x0  rw-p   
+      0x7fffdd744000     0x7fffdd758000    0x14000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0
+      0x7fffdd758000     0x7fffdd849000    0xf1000    0x14000  r-xp   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0
+      0x7fffdd849000     0x7fffdd881000    0x38000   0x105000  r--p   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0
+      0x7fffdd881000     0x7fffdd885000     0x4000   0x13d000  r--p   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0
+      0x7fffdd885000     0x7fffdd887000     0x2000   0x141000  rw-p   /usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0
+      0x7fffdd887000     0x7fffdd888000     0x1000        0x0  rw-p   
+      0x7fffdd888000     0x7fffdd893000     0xb000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0
+      0x7fffdd893000     0x7fffdd961000    0xce000     0xb000  r-xp   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0
+      0x7fffdd961000     0x7fffdd993000    0x32000    0xd9000  r--p   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdd993000     0x7fffdd994000     0x1000   0x10b000  r--p   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0
+      0x7fffdd994000     0x7fffdd995000     0x1000   0x10c000  rw-p   /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0
+      0x7fffdd995000     0x7fffdd9a8000    0x13000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1
+      0x7fffdd9a8000     0x7fffdd9e1000    0x39000    0x13000  r-xp   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1
+      0x7fffdd9e1000     0x7fffdd9fb000    0x1a000    0x4c000  r--p   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1
+      0x7fffdd9fb000     0x7fffdd9ff000     0x4000    0x65000  r--p   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1
+      0x7fffdd9ff000     0x7fffdda00000     0x1000    0x69000  rw-p   /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1
+      0x7fffdda00000     0x7fffdda83000    0x83000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32
+      0x7fffdda83000     0x7fffdde31000   0x3ae000    0x83000  r-xp   /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32
+      0x7fffdde31000     0x7fffde1b6000   0x385000   0x431000  r--p   /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32
+      0x7fffde1b6000     0x7fffde1c6000    0x10000   0x7b5000  r--p   /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32
+      0x7fffde1c6000     0x7fffde1c8000     0x2000   0x7c5000  rw-p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libgtk-3.so.0.2409.32
+      0x7fffde1c8000     0x7fffde1cd000     0x5000        0x0  rw-p   
+      0x7fffde1d0000     0x7fffde1d1000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+      0x7fffde1d1000     0x7fffde1d2000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+      0x7fffde1d2000     0x7fffde1d3000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+      0x7fffde1d3000     0x7fffde1d4000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+      0x7fffde1d4000     0x7fffde1d5000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+      0x7fffde1d5000     0x7fffde1dd000     0x8000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10
+      0x7fffde1dd000     0x7fffde1f8000    0x1b000     0x8000  r-xp   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10
+      0x7fffde1f8000     0x7fffde201000     0x9000    0x23000  r--p   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10
+      0x7fffde201000     0x7fffde202000     0x1000    0x2c000  r--p   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10
+      0x7fffde202000     0x7fffde203000     0x1000    0x2d000  rw-p   /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10
+      0x7fffde203000     0x7fffde20e000     0xb000        0x0  r--p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libatk-1.0.so.0.25209.1
+      0x7fffde20e000     0x7fffde21e000    0x10000     0xb000  r-xp   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1
+      0x7fffde21e000     0x7fffde229000     0xb000    0x1b000  r--p   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1
+      0x7fffde229000     0x7fffde22c000     0x3000    0x26000  r--p   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1
+      0x7fffde22c000     0x7fffde22d000     0x1000    0x29000  rw-p   /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1
+      0x7fffde22d000     0x7fffde257000    0x2a000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32
+      0x7fffde257000     0x7fffde2db000    0x84000    0x2a000  r-xp   /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32
+      0x7fffde2db000     0x7fffde31d000    0x42000    0xae000  r--p   /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32
+      0x7fffde31d000     0x7fffde326000     0x9000    0xef000  r--p   /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32
+      0x7fffde326000     0x7fffde328000     0x2000    0xf8000  rw-p   /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32
+      0x7fffde328000     0x7fffde329000     0x1000        0x0  ---p   
+      0x7fffde329000     0x7fffdeb29000   0x800000        0x0  rw-p   
+      0x7fffdeb29000     0x7fffdeb2a000     0x1000        0x0  ---p   
+      0x7fffdeb2a000     0x7fffdf32a000   0x800000        0x0  rw-p   
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdf32a000     0x7fffdfa00000   0x6d6000        0x0  rw-p   
+      0x7fffdfa00000     0x7fffdfa03000     0x3000        0x0  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libXau-154567c4.so.6.0.0
+      0x7fffdfa03000     0x7fffdfc02000   0x1ff000     0x3000  ---p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libXau-154567c4.so.6.0.0
+      0x7fffdfc02000     0x7fffdfc03000     0x1000     0x2000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libXau-154567c4.so.6.0.0
+      0x7fffdfc03000     0x7fffdfc04000     0x1000        0x0  rw-p   
+      0x7fffdfc04000     0x7fffdfc05000     0x1000     0x5000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libXau-154567c4.so.6.0.0
+      0x7fffdfc09000     0x7fffdfc0b000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+      0x7fffdfc0b000     0x7fffdfc0e000     0x3000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+      0x7fffdfc0e000     0x7fffdfc0f000     0x1000     0x5000  r--p   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+      0x7fffdfc0f000     0x7fffdfc10000     0x1000     0x5000  r--p   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+      0x7fffdfc10000     0x7fffdfc11000     0x1000     0x6000  rw-p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libXfixes.so.3.1.0
+      0x7fffdfc11000     0x7fffdfc33000    0x22000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Svg.so.6
+      0x7fffdfc33000     0x7fffdfca1000    0x6e000    0x22000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Svg.so.6
+      0x7fffdfca1000     0x7fffdfcb4000    0x13000    0x90000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Svg.so.6
+      0x7fffdfcb4000     0x7fffdfcb8000     0x4000    0xa3000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Svg.so.6
+      0x7fffdfcb8000     0x7fffdfcb9000     0x1000    0xa7000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Svg.so.6
+      0x7fffdfcb9000     0x7fffdfdb9000   0x100000        0x0  rw-p   
+      0x7fffdfdb9000     0x7fffdfdbe000     0x5000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libzstd-6ea785c0.so.1.5.7
+      0x7fffdfdbe000     0x7fffdff4e000   0x190000     0x5000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libzstd-6ea785c0.so.1.5.7
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffdff4e000     0x7fffdff6d000    0x1f000   0x195000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libzstd-6ea785c0.so.1.5.7
+      0x7fffdff6d000     0x7fffdff6e000     0x1000   0x1b4000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libzstd-6ea785c0.so.1.5.7
+      0x7fffdff6e000     0x7fffdff71000     0x3000   0x1b5000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libzstd-6ea785c0.so.1.5.7
+      0x7fffdff71000     0x7fffdff79000     0x8000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f3576751.so.2.5.4
+      0x7fffdff79000     0x7fffdffe8000    0x6f000     0x8000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f3576751.so.2.5.4
+      0x7fffdffe8000     0x7fffdfffb000    0x13000    0x77000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f3576751.so.2.5.4
+      0x7fffdfffb000     0x7fffdfffc000     0x1000    0x8a000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f3576751.so.2.5.4
+      0x7fffdfffc000     0x7fffdfffd000     0x1000    0x8b000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f35--Type <RET> for more, q to quit, c to continue without paging--
+76751.so.2.5.4
+      0x7fffdfffd000     0x7fffe0000000     0x3000    0x8d000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libopenjp2-f3576751.so.2.5.4
+      0x7fffe0000000     0x7fffe2000000  0x2000000        0x0  rw-p   
+      0x7fffe2002000     0x7fffe2003000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0
+      0x7fffe2003000     0x7fffe2004000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0
+      0x7fffe2004000     0x7fffe2005000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0
+      0x7fffe2005000     0x7fffe2006000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0
+      0x7fffe2006000     0x7fffe2007000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0
+      0x7fffe2007000     0x7fffe2009000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0
+      0x7fffe2009000     0x7fffe200b000     0x2000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0
+      0x7fffe200b000     0x7fffe200c000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0
+      0x7fffe200c000     0x7fffe200d000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffe200d000     0x7fffe200e000     0x1000     0x5000  rw-p   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0
+      0x7fffe200e000     0x7fffe2013000     0x5000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1
+      0x7fffe2013000     0x7fffe201b000     0x8000     0x5000  r-xp   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1
+      0x7fffe201b000     0x7fffe201d000     0x2000     0xd000  r--p   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1
+      0x7fffe201d000     0x7fffe201e000     0x1000     0xf000  r--p   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1
+      0x7fffe201e000     0x7fffe201f000     0x1000    0x10000  rw-p   /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1
+      0x7fffe201f000     0x7fffe202a000     0xb000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/plugins/platformthemes/libqgtk3.so
+      0x7fffe202a000     0x7fffe2051000    0x27000     0xb000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/plugins/platformthemes/libqgtk3.so
+      0x7fffe2051000     0x7fffe2057000     0x6000    0x32000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/plugins/platformthemes/libqgtk3.so
+      0x7fffe2057000     0x7fffe2059000     0x2000    0x38000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/plugins/platform--Type <RET> for more, q to quit, c to continue without paging--
+themes/libqgtk3.so
+      0x7fffe2059000     0x7fffe205a000     0x1000    0x3a000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/plugins/platformthemes/libqgtk3.so
+      0x7fffe205a000     0x7fffe2064000     0xa000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xkb.so.1.0.0
+      0x7fffe2064000     0x7fffe2071000     0xd000     0xa000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-xkb.so.1.0.0
+      0x7fffe2071000     0x7fffe2076000     0x5000    0x17000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xkb.so.1.0.0
+      0x7fffe2076000     0x7fffe2077000     0x1000    0x1b000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xkb.so.1.0.0
+      0x7fffe2077000     0x7fffe2078000     0x1000    0x1c000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-xkb.so.1.0.0
+      0x7fffe2078000     0x7fffe207e000     0x6000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libjpeg-8296d2fa.so.62.4.0
+      0x7fffe207e000     0x7fffe2116000    0x98000     0x6000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libjpeg-8296d2fa.so.62.4.0
+      0x7fffe2116000     0x7fffe213f000    0x29000    0x9e000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libjpeg-8296d2fa.so.62.4.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffe213f000     0x7fffe2140000     0x1000    0xc7000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libjpeg-8296d2fa.so.62.4.0
+      0x7fffe2140000     0x7fffe2145000     0x5000    0xc8000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libjpeg-8296d2fa.so.62.4.0
+      0x7fffe2145000     0x7fffe214d000     0x8000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73ff.so.6.2.0
+      0x7fffe214d000     0x7fffe21c2000    0x75000     0x8000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73ff.so.6.2.0
+      0x7fffe21c2000     0x7fffe21f4000    0x32000    0x7d000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73ff.so.6.2.0
+      0x7fffe21f4000     0x7fffe21f8000     0x4000    0xaf000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73ff.so.6.2.0
+      0x7fffe21f8000     0x7fffe21f9000     0x1000    0xb3000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73ff.so.6.2.0
+      0x7fffe21f9000     0x7fffe21fd000     0x4000    0xb5000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libtiff-f4bc73--Type <RET> for more, q to quit, c to continue without paging--
+ff.so.6.2.0
+      0x7fffe21fd000     0x7fffe21fe000     0x1000        0x0  ---p   
+      0x7fffe21fe000     0x7fffe29fe000   0x800000        0x0  rw-p   
+      0x7fffe29fe000     0x7fffe29ff000     0x1000        0x0  ---p   
+      0x7fffe29ff000     0x7fffe31ff000   0x800000        0x0  rw-p   
+      0x7fffe31ff000     0x7fffe3200000     0x1000        0x0  ---p   
+      0x7fffe3200000     0x7fffe3a00000   0x800000        0x0  rw-p   
+      0x7fffe3a00000     0x7fffeba00000  0x8000000        0x0  rw-p   
+      0x7fffeba00000     0x7fffeba3b000    0x3b000        0x0  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0
+      0x7fffeba3b000     0x7fffebc3a000   0x1ff000    0x3b000  ---p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0
+      0x7fffebc3a000     0x7fffebc3b000     0x1000    0x3a000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0
+      0x7fffebc3b000     0x7fffebc3e000     0x3000    0x3b000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0
+      0x7fffebc3f000     0x7fffebc43000     0x4000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0
+      0x7fffebc43000     0x7fffebc45000     0x2000     0x4000  r-xp   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libcairo-gobject.so.2.11800.0
+      0x7fffebc45000     0x7fffebc48000     0x3000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0
+      0x7fffebc48000     0x7fffebc4a000     0x2000     0x8000  r--p   /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0
+      0x7fffebc4a000     0x7fffebc4b000     0x1000     0xa000  rw-p   /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0
+      0x7fffebc4b000     0x7fffebc5c000    0x11000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebc5c000     0x7fffebce0000    0x84000    0x11000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebce0000     0x7fffebcf1000    0x11000    0x95000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebcf1000     0x7fffebcf5000     0x4000    0xa5000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebcf5000     0x7fffebcf9000     0x4000    0xa9000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebcf9000     0x7fffebd00000     0x7000   0x32e000  rw-p   /tmp/.moun--Type <RET> for more, q to quit, c to continue without paging--
+t_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
+      0x7fffebd00000     0x7fffebe00000   0x100000        0x0  rw-p   
+      0x7fffebe00000     0x7fffec076000   0x276000        0x0  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+      0x7fffec076000     0x7fffec275000   0x1ff000   0x276000  ---p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+      0x7fffec275000     0x7fffec276000     0x1000   0x275000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+      0x7fffec276000     0x7fffec278000     0x2000   0x276000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+      0x7fffec278000     0x7fffec2b1000    0x39000   0x27b000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+      0x7fffec2b4000     0x7fffec2b5000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+      0x7fffec2b5000     0x7fffec2b6000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+      0x7fffec2b6000     0x7fffec2b7000     0x1000     0x2000  r--p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libX11-xcb.so.1.0.0
+      0x7fffec2b7000     0x7fffec2b8000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+      0x7fffec2b8000     0x7fffec2b9000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+      0x7fffec2b9000     0x7fffec2ba000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shape.so.0.0.0
+      0x7fffec2ba000     0x7fffec2bb000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-shape.so.0.0.0
+      0x7fffec2bb000     0x7fffec2bc000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shape.so.0.0.0
+      0x7fffec2bc000     0x7fffec2bd000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shape.so.0.0.0
+      0x7fffec2bd000     0x7fffec2be000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-shape.so.0.0.0
+      0x7fffec2be000     0x7fffec2c2000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/liblzma-3c942967.so.5.8.3
+      0x7fffec2c2000     0x7fffec2ef000    0x2d000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/liblzma-3c942967.so.5.8.3
+      0x7fffec2ef000     0x7fffec2fc000     0xd000    0x31000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/liblzma-3c9429--Type <RET> for more, q to quit, c to continue without paging--
+67.so.5.8.3
+      0x7fffec2fc000     0x7fffec2fd000     0x1000    0x3e000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/liblzma-3c942967.so.5.8.3
+      0x7fffec2fd000     0x7fffec300000     0x3000    0x3f000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/liblzma-3c942967.so.5.8.3
+      0x7fffec300000     0x7fffec400000   0x100000        0x0  rw-p   
+      0x7fffec400000     0x7fffec689000   0x289000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+      0x7fffec689000     0x7fffed9ca000  0x1341000   0x288000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+      0x7fffed9ca000     0x7fffed9d2000     0x8000  0x15c8000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+      0x7fffed9d2000     0x7fffed9e1000     0xf000  0x15cf000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+      0x7fffed9e1000     0x7fffed9e8000     0x7000        0x0  rw-p   
+      0x7fffed9e8000     0x7fffed9ed000     0x5000  0x15e8000  ---p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openbl--Type <RET> for more, q to quit, c to continue without paging--
+as64_-32a4b2a6.so
+      0x7fffed9ed000     0x7fffedb57000   0x16a000  0x16d2000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so
+      0x7fffedb58000     0x7fffedb5d000     0x5000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+      0x7fffedb5d000     0x7fffedb62000     0x5000     0x5000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+      0x7fffedb62000     0x7fffedb65000     0x3000     0xa000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+      0x7fffedb65000     0x7fffedb66000     0x1000     0xc000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+      0x7fffedb66000     0x7fffedb67000     0x1000     0xd000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+      0x7fffedb67000     0x7fffedb6a000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0
+      0x7fffedb6a000     0x7fffedb6d000     0x3000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0
+      0x7fffedb6d000     0x7fffedb6f000     0x2000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0
+      0x7fffedb6f000     0x7fffedb70000     0x1000     0x7000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0
+      0x7fffedb70000     0x7fffedb71000     0x1000     0x8000  rw-p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libxcb-xfixes.so.0.0.0
+      0x7fffedb71000     0x7fffedb74000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+      0x7fffedb74000     0x7fffedb77000     0x3000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+      0x7fffedb77000     0x7fffedb78000     0x1000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+      0x7fffedb78000     0x7fffedb79000     0x1000     0x7000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+      0x7fffedb79000     0x7fffedb7a000     0x1000     0x8000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+      0x7fffedb7a000     0x7fffedb7b000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+      0x7fffedb7b000     0x7fffedb7c000     0x1000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+      0x7fffedb7c000     0x7fffedb7d000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+      0x7fffedb7d000     0x7fffedb7e000     0x1000     0x2000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+      0x7fffedb7e000     0x7fffedb7f000     0x1000     0x3000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+      0x7fffedb7f000     0x7fffedb86000     0x7000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffedb86000     0x7fffedb8b000     0x5000     0x7000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0
+      0x7fffedb8b000     0x7fffedb8e000     0x3000     0xc000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0
+      0x7fffedb8e000     0x7fffedb8f000     0x1000     0xf000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0
+      0x7fffedb8f000     0x7fffedb90000     0x1000    0x10000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0
+      0x7fffedb90000     0x7fffedb9c000     0xc000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+      0x7fffedb9c000     0x7fffedbb7000    0x1b000     0xc000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+      0x7fffedbb7000     0x7fffedbc1000     0xa000    0x27000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+      0x7fffedbc1000     0x7fffedbc2000     0x1000    0x30000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+      0x7fffedbc2000     0x7fffedbc3000     0x1000    0x31000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffedbc3000     0x7fffedbce000     0xb000    0x33000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/pillow.libs/libxcb-bac6ebc8.so.1.1.0
+      0x7fffedbce000     0x7fffedbd2000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedbd2000     0x7fffedbf6000    0x24000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedbf6000     0x7fffedbfb000     0x5000    0x28000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedbfb000     0x7fffedbfc000     0x1000    0x2d000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedbfc000     0x7fffedbfd000     0x1000    0x2e000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedbfd000     0x7fffedc00000     0x3000    0x36000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/linalg/_umath_linalg.cpython-313-x86_64-linux-gnu.so
+      0x7fffedc00000     0x7fffedc2b000    0x2b000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_um--Type <RET> for more, q to quit, c to continue without paging--
+ath.cpython-313-x86_64-linux-gnu.so
+      0x7fffedc2b000     0x7fffee3bd000   0x792000    0x2b000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so
+      0x7fffee3bd000     0x7fffee54c000   0x18f000   0x7bd000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so
+      0x7fffee54c000     0x7fffee54f000     0x3000   0x94c000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so
+      0x7fffee54f000     0x7fffee572000    0x23000   0x94f000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so
+      0x7fffee572000     0x7fffee589000    0x17000        0x0  rw-p   
+      0x7fffee589000     0x7fffee594000     0xb000   0x9ee000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so
+      0x7fffee594000     0x7fffee596000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render-util.so.0.0.0
+      0x7fffee596000     0x7fffee598000     0x2000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-render-util.so.0.0.0
+      0x7fffee598000     0x7fffee599000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render-util.so.0.0.0
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffee599000     0x7fffee59a000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-render-util.so.0.0.0
+      0x7fffee59a000     0x7fffee59b000     0x1000     0x5000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-render-util.so.0.0.0
+      0x7fffee59b000     0x7fffee59c000     0x1000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0
+      0x7fffee59c000     0x7fffee59e000     0x2000     0x1000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0
+      0x7fffee59e000     0x7fffee59f000     0x1000     0x3000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0
+      0x7fffee59f000     0x7fffee5a0000     0x1000     0x3000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0
+      0x7fffee5a0000     0x7fffee5a1000     0x1000     0x4000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-image.so.0.0.0
+      0x7fffee5a1000     0x7fffee5a4000     0x3000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-util.so.1.0.0
+      0x7fffee5a4000     0x7fffee5a6000     0x2000     0x3000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-util.so.1.0.0
+      0x7fffee5a6000     0x7fffee5a7000     0x1000     0x5000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-util.so.1.0.0
+      0x7fffee5a7000     0x7fffee5a8000     0x1000     0x6000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-util.so.1.0.0
+      0x7fffee5a8000     0x7fffee5a9000     0x1000     0x7000  rw-p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libxcb-util.so.1.0.0
+      0x7fffee5a9000     0x7fffee5ae000     0x5000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/QtSvg.abi3.so
+      0x7fffee5ae000     0x7fffee5b3000     0x5000     0x5000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/QtSvg.abi3.so
+      0x7fffee5b3000     0x7fffee5b6000     0x3000     0xa000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/QtSvg.abi3.so
+      0x7fffee5b6000     0x7fffee5b7000     0x1000     0xc000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/QtSvg.abi3.so
+      0x7fffee5b7000     0x7fffee5b9000     0x2000     0xd000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/PyQt6/QtSvg.abi3.so
+      0x7fffee5b9000     0x7fffee8b9000   0x300000        0x0  rw-p   
+      0x7fffee8b9000     0x7fffee8c3000     0xa000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.so
+      0x7fffee8c3000     0x7fffee8ed000    0x2a000     0xa000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.so
+      0x7fffee8ed000     0x7fffee901000    0x14000    0x34000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.so
+      0x7fffee901000     0x7fffee902000     0x1000    0x48000  ---p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.--Type <RET> for more, q to quit, c to continue without paging--
+so
+      0x7fffee902000     0x7fffee903000     0x1000    0x48000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.so
+      0x7fffee903000     0x7fffee907000     0x4000    0x49000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/google/_upb/_message.abi3.so
+      0x7fffee907000     0x7fffeea07000   0x100000        0x0  rw-p   
+      0x7fffeea07000     0x7fffeea11000     0xa000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
+      0x7fffeea11000     0x7fffeea74000    0x63000     0xa000  r-xp   /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
+      0x7fffeea74000     0x7fffeea89000    0x15000    0x6d000  r--p   /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
+      0x7fffeea89000     0x7fffeea8a000     0x1000    0x81000  r--p   /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
+      0x7fffeea8a000     0x7fffeea8b000     0x1000    0x82000  rw-p   /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
+      0x7fffeea8c000     0x7fffeea8e000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-icccm.so.4.0.0
+      0x7fffeea8e000     0x7fffeea90000     0x2000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-icccm.so.4.0.0
+      0x7fffeea90000     0x7fffeea91000     0x1000     0x4000  r--p   /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libxcb-icccm.so.4.0.0
+      0x7fffeea91000     0x7fffeea92000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-icccm.so.4.0.0
+      0x7fffeea92000     0x7fffeea93000     0x1000     0x5000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-icccm.so.4.0.0
+      0x7fffeea93000     0x7fffeea95000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libxcb-cursor.so.0.0.0
+      0x7fffeea95000     0x7fffeea97000     0x2000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/libxcb-cursor.so.0.0.0
+      0x7fffeea97000     0x7fffeea98000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-cursor.so.0.0.0
+      0x7fffeea98000     0x7fffeea99000     0x1000     0x4000  r--p   /usr/lib/x86_64-linux-gnu/libxcb-cursor.so.0.0.0
+      0x7fffeea99000     0x7fffeea9a000     0x1000     0x5000  rw-p   /usr/lib/x86_64-linux-gnu/libxcb-cursor.so.0.0.0
+      0x7fffeea9a000     0x7fffeea9b000     0x1000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA256.abi3.so
+      0x7fffeea9b000     0x7fffeea9e000     0x3000     0x1000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA256.abi3.so
+      0x7fffeea9e000     0x7fffeea9f000     0x1000     0x4000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA256.ab--Type <RET> for more, q to quit, c to continue without paging--
+i3.so
+      0x7fffeea9f000     0x7fffeeaa0000     0x1000     0x4000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA256.abi3.so
+      0x7fffeeaa0000     0x7fffeeaa1000     0x1000     0x5000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA256.abi3.so
+      0x7fffeeaa1000     0x7fffeeea1000   0x400000        0x0  rw-p   
+      0x7fffeeea1000     0x7fffeeea7000     0x6000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cqueue.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeea7000     0x7fffeeece000    0x27000     0x6000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cqueue.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeece000     0x7fffeeed9000     0xb000    0x2d000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cqueue.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeed9000     0x7fffeeeda000     0x1000    0x37000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cqueue.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeeda000     0x7fffeeedd000     0x3000    0x38000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cqueue.cpython-313-x86_64-linux-gnu.so
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffeeedd000     0x7fffeeede000     0x1000        0x0  rw-p   
+      0x7fffeeede000     0x7fffeeee3000     0x5000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cevent.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeee3000     0x7fffeeef5000    0x12000     0x5000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cevent.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeef5000     0x7fffeeefc000     0x7000    0x17000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cevent.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeefc000     0x7fffeeefd000     0x1000    0x1d000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cevent.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeefd000     0x7fffeeeff000     0x2000    0x1e000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cevent.cpython-313-x86_64-linux-gnu.so
+      0x7fffeeeff000     0x7fffeef03000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_abstract_linkable.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef03000     0x7fffeef17000    0x14000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_abstract_linkable.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef17000     0x7fffeef1c000     0x5000    0x18000  r--p   /tmp/.moun--Type <RET> for more, q to quit, c to continue without paging--
+t_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_abstract_linkable.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef1c000     0x7fffeef1d000     0x1000    0x1d000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_abstract_linkable.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef1d000     0x7fffeef1e000     0x1000    0x1e000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_abstract_linkable.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef1e000     0x7fffeef1f000     0x1000        0x0  rw-p   
+      0x7fffeef1f000     0x7fffeef25000     0x6000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cgreenlet.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef25000     0x7fffeef4f000    0x2a000     0x6000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cgreenlet.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef4f000     0x7fffeef5c000     0xd000    0x30000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cgreenlet.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef5c000     0x7fffeef5d000     0x1000    0x3c000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cgreenlet.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef5d000     0x7fffeef60000     0x3000    0x3d000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_cgreenlet.c--Type <RET> for more, q to quit, c to continue without paging--
+python-313-x86_64-linux-gnu.so
+      0x7fffeef60000     0x7fffeef61000     0x1000        0x0  rw-p   
+      0x7fffeef61000     0x7fffeef65000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_hub_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef65000     0x7fffeef7c000    0x17000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_hub_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef7c000     0x7fffeef82000     0x6000    0x1b000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_hub_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef82000     0x7fffeef83000     0x1000    0x21000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_hub_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef83000     0x7fffeef85000     0x2000    0x22000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_hub_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef85000     0x7fffeef89000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_waiter.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef89000     0x7fffeef96000     0xd000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_waiter.cpython-313-x86_64-linux-gnu.so
+--Type <RET> for more, q to quit, c to continue without paging--
+      0x7fffeef96000     0x7fffeef9b000     0x5000    0x11000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_waiter.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef9b000     0x7fffeef9c000     0x1000    0x15000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_waiter.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef9c000     0x7fffeef9e000     0x2000    0x16000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_waiter.cpython-313-x86_64-linux-gnu.so
+      0x7fffeef9e000     0x7fffeefa2000     0x4000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_greenlet_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeefa2000     0x7fffeefac000     0xa000     0x4000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_greenlet_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeefac000     0x7fffeefb0000     0x4000     0xe000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_greenlet_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeefb0000     0x7fffeefb1000     0x1000    0x11000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_greenlet_primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeefb1000     0x7fffeefb2000     0x1000    0x12000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/_gevent_c_greenlet_--Type <RET> for more, q to quit, c to continue without paging--
+primitives.cpython-313-x86_64-linux-gnu.so
+      0x7fffeefb2000     0x7fffef0b3000   0x101000        0x0  rw-p   
+      0x7fffef0b3000     0x7fffef0bd000     0xa000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/libev/corecext.cpython-313-x86_64-linux-gnu.so
+      0x7fffef0bd000     0x7fffef101000    0x44000     0xa000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/libev/corecext.cpython-313-x86_64-linux-gnu.so
+      0x7fffef101000     0x7fffef10e000     0xd000    0x4e000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/libev/corecext.cpython-313-x86_64-linux-gnu.so
+      0x7fffef10e000     0x7fffef10f000     0x1000    0x5b000  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/libev/corecext.cpython-313-x86_64-linux-gnu.so
+      0x7fffef10f000     0x7fffef113000     0x4000    0x5c000  rw-p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/gevent/libev/corecext.cpython-313-x86_64-linux-gnu.so
+      0x7fffef113000     0x7fffef115000     0x2000        0x0  rw-p   
+      0x7fffef115000     0x7fffef11b000     0x6000        0x0  r--p   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/zstandard/backend_c.cpython-313-x86_64-linux-gnu.so
+      0x7fffef11b000     0x7fffef1e5000    0xca000     0x6000  r-xp   /tmp/.mount_ACCELAIMcioL/bin/.venv/lib/python3.13/site-packages/zstandard/backend_c.cpytho--Type <RET> for more, q to quit, c to continue without paging--Quit
+(gdb) 

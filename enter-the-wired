@@ -1,0 +1,188 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ENTER THE WIRED
+# "I am here. But where is here? And where is here within here?"
+
+# Combo script that installs both ACCELA and SLSsteam
+# Supports both local and curl | bash execution
+
+GITHUB_USER="ciscosweater"
+GITHUB_REPO="enter-the-wired"
+
+# Headcrab (SLSsteam replacement) - execute remotely in a subshell
+SLS_URL="https://raw.githubusercontent.com/Deadboy666/h3adcr-b/main/headcrab.sh?t=$(date +%s)"
+
+# Detect if running via curl | bash (BASH_SOURCE empty or BASH_SOURCE[0] == "-")
+RUNNING_VIA_PIPE=false
+if [ -z "${BASH_SOURCE:-}" ] || [ ${#BASH_SOURCE[@]} -eq 0 ] || [[ "${BASH_SOURCE[0]:-}" == "-" ]]; then
+    RUNNING_VIA_PIPE=true
+fi
+
+# Colors (disabled if not interactive terminal)
+if [ -t 1 ] && [ -t 0 ]; then
+    GREEN='\033[0;32m'
+    RED='\033[0;31m'
+    YELLOW='\033[1;33m'
+    NC='\033[0m'
+else
+    GREEN=''
+    RED=''
+    YELLOW=''
+    NC=''
+fi
+
+# Helper: best-effort detection of SLSsteam install directory. Returns
+# a sensible path if found, otherwise prints "unknown".
+get_sls_install_dir() {
+    # Common candidate locations (checked in order)
+    local candidates=(
+        "$HOME/.local/share/SLSsteam"
+        "$HOME/.var/app/com.valvesoftware.Steam/.local/share/SLSsteam"
+    )
+
+    for d in "${candidates[@]}"; do
+        if [ -d "${d}" ]; then
+            printf '%s' "${d}"
+            return 0
+        fi
+    done
+
+    printf 'unknown'
+}
+
+if [ "$RUNNING_VIA_PIPE" = true ]; then
+    # Running via curl | bash - need to fetch scripts from GitHub
+    echo -e "${GREEN}Detected pipe execution, fetching scripts from GitHub...${NC}"
+
+    SCRIPT_DIR=$(mktemp -d)
+    trap "rm -rf $SCRIPT_DIR" EXIT
+
+    # Fetch accela and fix-deps only; run Headcrab (SLSsteam) remotely in a subshell
+    curl -fsSL --retry 3 --retry-delay 2 -o "$SCRIPT_DIR/accela" "https://raw.githubusercontent.com/$GITHUB_USER/$GITHUB_REPO/main/accela?t=$(date +%s)"
+    curl -fsSL --retry 3 --retry-delay 2 -o "$SCRIPT_DIR/fix-deps" "https://raw.githubusercontent.com/$GITHUB_USER/$GITHUB_REPO/main/fix-deps?t=$(date +%s)"
+
+    chmod +x "$SCRIPT_DIR/accela" "$SCRIPT_DIR/fix-deps"
+
+    # Defer Headcrab execution until after other components are installed.
+    # When running via pipe we fetch helpers only; Headcrab will be executed
+    # later in the installer so it runs as the final step and only once.
+    echo -e "${GREEN}Deferring Headcrab execution until after installations...${NC}"
+else
+    # Local execution - source from same directory
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+    if [ ! -f "$SCRIPT_DIR/accela" ]; then
+        echo "Error: accela not found in $SCRIPT_DIR"
+        exit 1
+    fi
+    if [ ! -f "$SCRIPT_DIR/fix-deps" ]; then
+        echo "Error: fix-deps not found in $SCRIPT_DIR"
+        exit 1
+    fi
+fi
+
+echo -e "${GREEN}=============================================="
+echo "  ENTER THE WIRED - Combo Installer"
+echo "==============================================${NC}"
+echo ""
+
+# Run fix-deps first to ensure all dependencies are installed
+# Skip on Bazzite (read-only /usr, dependencies already handled by rpm-ostree)
+echo "Installing dependencies..."
+echo "----------------------------------------------"
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+    if [ "$ID" = "bazzite" ] || [ "$ID" = "steamos" ]; then
+        echo "  $ID detected - skipping fix-deps (handled by ostree/package manager)"
+    else
+        source "$SCRIPT_DIR/fix-deps"
+    fi
+else
+    source "$SCRIPT_DIR/fix-deps"
+fi
+echo ""
+
+echo "If you have issues with missing dependencies, run:"
+echo "  ./fix-deps"
+
+echo ""
+echo "=============================================="
+echo -e "${GREEN}  INSTALLING COMPONENTS${NC}"
+echo "=============================================="
+echo ""
+
+# Source accela (local helper). Run Headcrab (remote SLSsteam) in a subshell to
+# keep the installer's shell isolated from the remote script's environment.
+source "$SCRIPT_DIR/accela"
+
+# Execute Headcrab via a temporary downloaded script so it can determine its
+# real script directory (avoids /proc/.../fd/ issues from process substitution)
+(
+    tmp_headcrab_script=$(mktemp -t headcrab.XXXX.sh)
+    trap 'rm -f "$tmp_headcrab_script"' EXIT
+    curl -fsSL --retry 3 --retry-delay 2 "$SLS_URL" -o "$tmp_headcrab_script"
+    chmod +x "$tmp_headcrab_script"
+    bash "$tmp_headcrab_script" "$@"
+)
+
+echo ""
+echo "=============================================="
+echo -e "${GREEN}  ALL INSTALLATIONS COMPLETED!${NC}"
+echo "=============================================="
+echo ""
+echo "  ACCELA:    Installed at ~/.local/share/ACCELA"
+echo "  SLSsteam:  Installed at $(get_sls_install_dir)"
+echo "  Scripts:   Saved at ~/enter-the-wired"
+echo "  To play with SLSsteam, just restart Steam."
+echo ""
+
+# Download scripts to ~/enter-the-wired for future use
+echo "Saving scripts to ~/enter-the-wired..."
+echo "----------------------------------------------"
+
+ENTER_THE_WIRED_DIR="$HOME/enter-the-wired"
+mkdir -p "$ENTER_THE_WIRED_DIR"
+
+# Download each script from GitHub
+curl -fsSL --retry 3 --retry-delay 2 -o "$ENTER_THE_WIRED_DIR/accela" "https://raw.githubusercontent.com/ciscosweater/enter-the-wired/main/accela?t=$(date +%s)"
+cat > "$ENTER_THE_WIRED_DIR/slssteam" << 'EOF'
+#!/usr/bin/env bash
+# Wrapper: download Headcrab to a temp file and execute it (ensures SCRIPT_DIR)
+tmp_headcrab_script=$(mktemp -t headcrab.XXXX.sh)
+curl -fsSL --retry 3 --retry-delay 2 "https://raw.githubusercontent.com/Deadboy666/h3adcr-b/main/headcrab.sh?t=$(date +%s)" -o "$tmp_headcrab_script"
+chmod +x "$tmp_headcrab_script"
+bash "$tmp_headcrab_script" "$@"
+rm -f "$tmp_headcrab_script"
+EOF
+curl -fsSL --retry 3 --retry-delay 2 -o "$ENTER_THE_WIRED_DIR/fix-deps" "https://raw.githubusercontent.com/ciscosweater/enter-the-wired/main/fix-deps?t=$(date +%s)"
+curl -fsSL --retry 3 --retry-delay 2 -o "$ENTER_THE_WIRED_DIR/uninstall" "https://raw.githubusercontent.com/ciscosweater/enter-the-wired/main/uninstall?t=$(date +%s)"
+
+# Set execute permissions (ignore if files don't exist)
+chmod +x "$ENTER_THE_WIRED_DIR/accela" 2>/dev/null || true
+chmod +x "$ENTER_THE_WIRED_DIR/slssteam" 2>/dev/null || true
+chmod +x "$ENTER_THE_WIRED_DIR/fix-deps" 2>/dev/null || true
+chmod +x "$ENTER_THE_WIRED_DIR/uninstall" 2>/dev/null || true
+
+echo -e "${GREEN}Scripts saved to $ENTER_THE_WIRED_DIR${NC}"
+echo ""
+echo "=============================================="
+echo -e "${YELLOW}  WHAT WAS INSTALLED${NC}"
+echo "=============================================="
+echo ""
+echo "  ACCELA    - Installed at ~/.local/share/ACCELA"
+echo "  SLSsteam  - Patched Steam for Linux Runtime"
+echo ""
+echo "=============================================="
+echo -e "${YELLOW}  LOCAL SCRIPTS AVAILABLE${NC}"
+echo "=============================================="
+echo ""
+echo "  ~/enter-the-wired/accela      - Install/upgrade ACCELA"
+echo "  ~/enter-the-wired/slssteam    - Install Steam Linux Runtime"
+echo "  ~/enter-the-wired/fix-deps     - Fix missing system dependencies"
+echo "  ~/enter-the-wired/uninstall   - Remove all installations"
+echo ""
+echo "  If you have missing dependencies or ran into issues trying to use ACCELA or SLSsteam, run:"
+echo "  ~/enter-the-wired/fix-deps"
+echo ""
+echo "Protocol complete. Welcome to the Wired."

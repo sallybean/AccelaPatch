@@ -1,0 +1,178 @@
+
+(gdb) run
+bt
+Starting program: /home/sallytable/.local/share/ACCELA/ACCELA.AppImage
+bt
+[Detaching after fork from child process 8000]
+process 7997 is executing new program: /usr/bin/dash
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 8006]
+process 7997 is executing new program: /usr/bin/env
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+process 7997 is executing new program: /usr/bin/bash
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 8008]
+process 7997 is executing new program: /tmp/.mount_ACCELABAngOM/bin/.venv/bin/python3.13
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after vfork from child process 8010]
+[New Thread 0x7fffe39ff6c0 (LWP 8011)]
+[New Thread 0x7fffe31fe6c0 (LWP 8012)]
+[New Thread 0x7fffe29fd6c0 (LWP 8013)]
+[Detaching after vfork from child process 8014]
+Removed old log file: accela_20261103_163426.log
+Log file created: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_164028.log
+2026-11-03 16:40:28,921 - utils.logger - INFO - Logging Initialized
+2026-11-03 16:40:28,922 - utils.logger - INFO - Platform: Linux
+2026-11-03 16:40:28,922 - utils.logger - INFO - Python: 3.13.0 (main, Oct 16 2024, 03:23:02) [Clang 18.1.8 ]
+2026-11-03 16:40:28,922 - utils.logger - INFO - Log file: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_164028.log
+2026-11-03 16:40:28,922 - utils.logger - INFO - File level: DEBUG
+2026-11-03 16:40:28,922 - utils.logger - INFO - Console level: INFO
+2026-11-03 16:40:28,922 - utils.logger - INFO - Qt GUI level: INFO
+2026-11-03 16:40:28,922 - utils.logger - INFO - ========================================
+2026-11-03 16:40:28,923 - utils.logger - INFO - ACCELA 20260512201930 starting...
+2026-11-03 16:40:28,923 - utils.logger - INFO - ========================================
+[New Thread 0x7fffdf3296c0 (LWP 8015)]
+[New Thread 0x7fffdeb286c0 (LWP 8016)]
+[New Thread 0x7fffdc9ff6c0 (LWP 8018)]
+[New Thread 0x7fffd61ff6c0 (LWP 8019)]
+[New Thread 0x7fffd59fe6c0 (LWP 8020)]
+[New Thread 0x7fffd51fd6c0 (LWP 8021)]
+2026-11-03 16:40:29,265 - utils.yaml_config_manager - INFO - Created backup: /home/sallytable/.config/SLSsteam/config.bak
+2026-11-03 16:40:29,266 - utils.logger - INFO - SLSsteam config backup created at startup
+2026-11-03 16:40:29,299 - utils.logger - INFO - Loaded custom font: 'TrixieCyrG-Plain'
+2026-11-03 16:40:29,333 - managers.ui_state_manager - WARNING - Custom directory does not exist: /home/sallytable/.local/share/ACCELA/gifs/custom
+2026-11-03 16:40:29,333 - managers.ui_state_manager - INFO - Total: 0 files removed, 0 files renamed
+
+Thread 1 "python3" received signal SIGILL, Illegal instruction.
+0x00007ffff0d79bae in ma_allocation_callbacks_init_copy ()
+at just_playback/miniaudio/miniaudio.h:13383
+warning: 13383 just_playback/miniaudio/miniaudio.h: No such file or directory
+
+Second:
+
+#!/usr/bin/env bash
+set -eu
+
+INSTALL_DIR="$HOME/.local/share/ACCELA"
+APPIMAGE="$INSTALL_DIR/ACCELA.AppImage"
+RUNSH="$INSTALL_DIR/run.sh"
+BIN="$INSTALL_DIR/ACCELA"
+
+if [ -x "$APPIMAGE" ]; then
+exec "$APPIMAGE" "$@"
+elif [ -x "$RUNSH" ]; then
+exec "$RUNSH" "$@"
+elif [ -x "$BIN" ]; then
+exec "$BIN" "$@"
+else
+echo "ACCELA not found in $INSTALL_DIR" >&2
+exit 1
+fi
+
+Then, it was put:
+
+bash -x ~/.local/bin/accela 2>&1 | tee ~/accela-trace.txt
++ set -eu
++ INSTALL_DIR=/home/sallytable/.local/share/ACCELA
++ APPIMAGE=/home/sallytable/.local/share/ACCELA/ACCELA.AppImage
++ RUNSH=/home/sallytable/.local/share/ACCELA/run.sh
++ BIN=/home/sallytable/.local/share/ACCELA/ACCELA
++ '[' -x /home/sallytable/.local/share/ACCELA/ACCELA.AppImage ']'
++ exec /home/sallytable/.local/share/ACCELA/ACCELA.AppImage
+Removed old log file: accela_20261103_163424_2.log
+Log file created: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163852.log
+2026-11-03 16:38:52,902 - utils.logger - INFO - Logging Initialized
+2026-11-03 16:38:52,902 - utils.logger - INFO - Platform: Linux
+2026-11-03 16:38:52,902 - utils.logger - INFO - Python: 3.13.0 (main, Oct 16 2024, 03:23:02) [Clang 18.1.8 ]
+2026-11-03 16:38:52,902 - utils.logger - INFO - Log file: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163852.log
+2026-11-03 16:38:52,902 - utils.logger - INFO - File level: DEBUG
+2026-11-03 16:38:52,902 - utils.logger - INFO - Console level: INFO
+2026-11-03 16:38:52,903 - utils.logger - INFO - Qt GUI level: INFO
+2026-11-03 16:38:52,903 - utils.logger - INFO - ========================================
+2026-11-03 16:38:52,903 - utils.logger - INFO - ACCELA 20260512201930 starting...
+2026-11-03 16:38:52,903 - utils.logger - INFO - ========================================
+2026-11-03 16:38:53,071 - utils.yaml_config_manager - INFO - Created backup: /home/sallytable/.config/SLSsteam/config.bak
+2026-11-03 16:38:53,071 - utils.logger - INFO - SLSsteam config backup created at startup
+2026-11-03 16:38:53,105 - utils.logger - INFO - Loaded custom font: 'TrixieCyrG-Plain'
+2026-11-03 16:38:53,137 - managers.ui_state_manager - WARNING - Custom directory does not exist: /home/sallytable/.local/share/ACCELA/gifs/custom
+2026-11-03 16:38:53,137 - managers.ui_state_manager - INFO - Total: 0 files removed, 0 files renamed
+
+Third:
+
+I opened it both in Terminal (got this result) opening via Executable on Desktop runs it invisibly in task manager, then closes without anything:
+
+Model name: Intel(R) Pentium(R) CPU 5405U @ 2.30GHz
+Flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust smep erms invpcid mpx rdseed smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+/home/sallytable/.local/bin/accela: Bourne-Again shell script, ASCII text executable
+
+Fourth:
+
+Because of this:
+
+Removed old log file: accela_20261103_163424.log
+Log file created: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163455.log
+2026-11-03 16:34:55,228 - utils.logger - INFO - Logging Initialized
+2026-11-03 16:34:55,229 - utils.logger - INFO - Platform: Linux
+2026-11-03 16:34:55,229 - utils.logger - INFO - Python: 3.13.0 (main, Oct 16 2024, 03:23:02) [Clang 18.1.8 ]
+2026-11-03 16:34:55,229 - utils.logger - INFO - Log file: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163455.log
+2026-11-03 16:34:55,229 - utils.logger - INFO - File level: DEBUG
+2026-11-03 16:34:55,230 - utils.logger - INFO - Console level: INFO
+2026-11-03 16:34:55,230 - utils.logger - INFO - Qt GUI level: INFO
+2026-11-03 16:34:55,230 - utils.logger - INFO - ========================================
+2026-11-03 16:34:55,230 - utils.logger - INFO - ACCELA 20260512201930 starting...
+2026-11-03 16:34:55,230 - utils.logger - INFO - ========================================
+2026-11-03 16:34:55,393 - utils.yaml_config_manager - INFO - Created backup: /home/sallytable/.config/SLSsteam/config.bak
+2026-11-03 16:34:55,393 - utils.logger - INFO - SLSsteam config backup created at startup
+2026-11-03 16:34:55,429 - utils.logger - INFO - Loaded custom font: 'TrixieCyrG-Plain'
+2026-11-03 16:34:55,472 - managers.ui_state_manager - WARNING - Custom directory does not exist: /home/sallytable/.local/share/ACCELA/gifs/custom
+2026-11-03 16:34:55,472 - managers.ui_state_manager - INFO - Total: 0 files removed, 0 files renamed
+Illegal instruction (core dumped)
+
+Fifth:
+
+sallytable@IdeaPad:~$ cat /etc/linuxmint/info
+dpkg --print-architecture
+dpkg --print-foreign-architectures
+apt-cache policy 'libcrypto++8t64:i386'
+RELEASE=22.3
+CODENAME=zena
+EDITION="Xfce"
+DESCRIPTION="Linux Mint 22.3 Zena"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=www.linuxmint.com/rel_zena_whatsnew.php
+RELEASE_NOTES_URL=www.linuxmint.com/rel_zena.php
+USER_GUIDE_URL=www.linuxmint.com/documentation.php
+GRUB_TITLE=Linux Mint 22.3 Xfce
+amd64
+i386
+N: Unable to locate package libcrypto++8t64:i386
+N: Couldn't find any package by regex 'libcrypto++8t64'
+
+(Insight:  'libcrypto++8t64' was already resolved, just slightly bugged but nothing to be worrisome of.)
+
+Sixth:
+(Just an additional log):
+
+Removed old log file: accela_20261103_163424.log
+Log file created: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163455.log
+2026-11-03 16:34:55,228 - utils.logger - INFO - Logging Initialized
+2026-11-03 16:34:55,229 - utils.logger - INFO - Platform: Linux
+2026-11-03 16:34:55,229 - utils.logger - INFO - Python: 3.13.0 (main, Oct 16 2024, 03:23:02) [Clang 18.1.8 ]
+2026-11-03 16:34:55,229 - utils.logger - INFO - Log file: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_163455.log
+2026-11-03 16:34:55,229 - utils.logger - INFO - File level: DEBUG
+2026-11-03 16:34:55,230 - utils.logger - INFO - Console level: INFO
+2026-11-03 16:34:55,230 - utils.logger - INFO - Qt GUI level: INFO
+2026-11-03 16:34:55,230 - utils.logger - INFO - ========================================
+2026-11-03 16:34:55,230 - utils.logger - INFO - ACCELA 20260512201930 starting...
+2026-11-03 16:34:55,230 - utils.logger - INFO - ========================================
+2026-11-03 16:34:55,393 - utils.yaml_config_manager - INFO - Created backup: /home/sallytable/.config/SLSsteam/config.bak
+2026-11-03 16:34:55,393 - utils.logger - INFO - SLSsteam config backup created at startup
+2026-11-03 16:34:55,429 - utils.logger - INFO - Loaded custom font: 'TrixieCyrG-Plain'
+2026-11-03 16:34:55,472 - managers.ui_state_manager - WARNING - Custom directory does not exist: /home/sallytable/.local/share/ACCELA/gifs/custom
+2026-11-03 16:34:55,472 - managers.ui_state_manager - INFO - Total: 0 files removed, 0 files renamed
+Illegal instruction (core dumped)

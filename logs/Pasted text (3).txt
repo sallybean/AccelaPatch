@@ -1,0 +1,39 @@
+(gdb) set disassembly-flavor intel
+x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+Junk after item "intel": x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+(gdb) set disassembly-flavor intel
+x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+Junk after item "intel": x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+(gdb) set disassembly-flavor intel
+(gdb) set disassembly-flavor intel
+x/12i $pc-16Quit
+(gdb) Quit
+(gdb) set disassembly-flavor intel
+x/12i $pc-16
+Junk after item "intel": x/12i $pc-16
+(gdb) ^[[200~x/12i $pc-16
+Undefined command: "".  Try "help".
+(gdb) ~
+Undefined command: "".  Try "help".
+(gdb) x/12i $pc-16
+No registers.
+(gdb) info registers
+The program has no registers now.
+(gdb) set disassembly-flavor intel
+x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+Junk after item "intel": x/12i $pc-16
+info registers
+disassemble /r ma_allocation_callbacks_init_copy
+(gdb) disassemble /r ma_allocation_callbacks_init_copy
+No symbol table is loaded.  Use the "file" command.
+(gdb) 

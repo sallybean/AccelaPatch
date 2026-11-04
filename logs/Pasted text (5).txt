@@ -1,0 +1,314 @@
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from /home/sallytable/.local/share/ACCELA/ACCELA.AppImage...
+(No debugging symbols found in /home/sallytable/.local/share/ACCELA/ACCELA.AppImage)
+(gdb) set disassembly-flavor intel
+(gdb) run
+Starting program: /home/sallytable/.local/share/ACCELA/ACCELA.AppImage
+[Detaching after fork from child process 10018]
+process 10015 is executing new program: /usr/bin/dash
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 10024]
+process 10015 is executing new program: /usr/bin/env
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+process 10015 is executing new program: /usr/bin/bash
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 10026]
+process 10015 is executing new program: /tmp/.mount_ACCELAopcFMD/bin/.venv/bin/python3.13
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after vfork from child process 10028]
+[New Thread 0x7fffe39ff6c0 (LWP 10029)]
+[New Thread 0x7fffe31fe6c0 (LWP 10030)]
+[New Thread 0x7fffe29fd6c0 (LWP 10031)]
+[Detaching after vfork from child process 10032]
+Removed old log file: accela_20261103_163917.log
+Log file created: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_174158.log
+2026-11-03 17:41:58,789 - utils.logger - INFO - Logging Initialized
+2026-11-03 17:41:58,790 - utils.logger - INFO - Platform: Linux
+2026-11-03 17:41:58,790 - utils.logger - INFO - Python: 3.13.0 (main, Oct 16 2024, 03:23:02) [Clang 18.1.8 ]
+2026-11-03 17:41:58,790 - utils.logger - INFO - Log file: /home/sallytable/.local/share/ACCELA/logs/accela_20261103_174158.log
+2026-11-03 17:41:58,791 - utils.logger - INFO - File level: DEBUG
+2026-11-03 17:41:58,791 - utils.logger - INFO - Console level: INFO
+2026-11-03 17:41:58,792 - utils.logger - INFO - Qt GUI level: INFO
+2026-11-03 17:41:58,792 - utils.logger - INFO - ========================================
+2026-11-03 17:41:58,792 - utils.logger - INFO - ACCELA 20260512201930 starting...
+2026-11-03 17:41:58,792 - utils.logger - INFO - ========================================
+[New Thread 0x7fffdf3296c0 (LWP 10033)]
+[New Thread 0x7fffdeb286c0 (LWP 10034)]
+[New Thread 0x7fffdc9ff6c0 (LWP 10036)]
+[New Thread 0x7fffd61ff6c0 (LWP 10037)]
+[New Thread 0x7fffd59fe6c0 (LWP 10038)]
+[New Thread 0x7fffd51fd6c0 (LWP 10039)]
+2026-11-03 17:41:59,180 - utils.yaml_config_manager - INFO - Created backup: /home/sallytable/.config/SLSsteam/config.bak
+2026-11-03 17:41:59,180 - utils.logger - INFO - SLSsteam config backup created at startup
+2026-11-03 17:41:59,217 - utils.logger - INFO - Loaded custom font: 'TrixieCyrG-Plain'
+2026-11-03 17:41:59,253 - managers.ui_state_manager - WARNING - Custom directory does not exist: /home/sallytable/.local/share/ACCELA/gifs/custom
+2026-11-03 17:41:59,253 - managers.ui_state_manager - INFO - Total: 0 files removed, 0 files renamed
+
+Thread 1 "python3" received signal SIGILL, Illegal instruction.
+0x00007ffff0d79bae in ma_allocation_callbacks_init_copy ()
+at just_playback/miniaudio/miniaudio.h:13383
+warning: 13383 just_playback/miniaudio/miniaudio.h: No such file or directory
+
+Then:
+
+0x7ffff0d79b9e <ma_context_init+974>: (bad)
+0x7ffff0d79b9f <ma_context_init+975>: add BYTE PTR [rax-0x73],cl
+0x7ffff0d79ba2 <ma_context_init+978>: adc eax,0xfffcef99
+0x7ffff0d79ba7 <ma_context_init+983>:
+lea rax,[rip+0xfffffffffffcef82] # 0x7ffff0d48b30 <ma__realloc_default>
+=> 0x7ffff0d79bae <ma_context_init+990>: vmovq xmm0,rdx
+0x7ffff0d79bb3 <ma_context_init+995>: vpinsrq xmm0,xmm0,rax,0x1
+0x7ffff0d79bb9 <ma_context_init+1001>:
+lea rax,[rip+0xfffffffffffcef60] # 0x7ffff0d48b20 <ma__free_default>
+0x7ffff0d79bc0 <ma_context_init+1008>:
+vmovdqu XMMWORD PTR [r15+0x128],xmm0
+0x7ffff0d79bc9 <ma_context_init+1017>: mov rbx,QWORD PTR [r12]
+0x7ffff0d79bcd <ma_context_init+1021>:
+mov QWORD PTR [r15+0x138],rax
+0x7ffff0d79bd4 <ma_context_init+1028>: test rbx,rbx
+0x7ffff0d79bd7 <ma_context_init+1031>:
+jne 0x7ffff0d79889 <ma_context_init+185>
+
+Then:
+
+rax 0x7ffff0d48b30 140737233849136
+rbx 0x5555569fab00 93825013885696
+rcx 0x7ffff63a4880 140737324402816
+rdx 0x7ffff0d48b40 140737233849152
+rsi 0x7fffffffc5c0 140737488340416
+rdi 0x7fffffffc710 140737488340752
+rbp 0x7fffffffc780 0x7fffffffc780
+rsp 0x7fffffffc4c0 0x7fffffffc4c0
+r8 0x7fffffffc6f8 140737488340728
+r9 0x7ffff63a4880 140737324402816
+r10 0x55555593ba64 93824996325988
+r11 0x7fffffffc650 140737488340560
+r12 0x7fffffffc650 140737488340560
+r13 0x555556924540 93825013007680
+r14 0x7fffffffc8d0 140737488341200
+r15 0x7fffffffc7b0 140737488340912
+rip 0x7ffff0d79bae 0x7ffff0d79bae <ma_context_init+990>
+eflags 0x10246 [ PF ZF IF RF ]
+cs 0x33 51
+ss 0x2b 43
+ds 0x0 0
+es 0x0 0
+fs 0x0 0
+gs 0x0 0
+fs_base 0x7ffff7ea3740 140737352709952
+gs_base 0x0 0
+(gdb)
+
+Then:
+
+Dump of assembler code from 0x7ffff0d79b8e to 0x7ffff0d79bce:
+0x00007ffff0d79b8e <ma_context_init+958>: 30 00 xor BYTE PTR [rax],al
+0x00007ffff0d79b90 <ma_context_init+960>: 75 bf jne 0x7ffff0d79b51 <ma_context_init+897>
+0x00007ffff0d79b92 <ma_context_init+962>: 49 c7 87 20 01 00 00 00 00 00 00mov QWORD PTR [r15+0x120],0x0
+0x00007ffff0d79b9d <ma_context_init+973>: 0f 1f 00 nop DWORD PTR [rax]
+0x00007ffff0d79ba0 <ma_context_init+976>: 48 8d 15 99 ef fc ff lea rdx,[rip+0xfffffffffffcef99] # 0x7ffff0d48b40 <ma__malloc_default>
+0x00007ffff0d79ba7 <ma_context_init+983>: 48 8d 05 82 ef fc ff lea rax,[rip+0xfffffffffffcef82] # 0x7ffff0d48b30 <ma__realloc_default>
+=> 0x00007ffff0d79bae <ma_context_init+990>: c4 e1 f9 6e c2 vmovq xmm0,rdx
+0x00007ffff0d79bb3 <ma_context_init+995>: c4 e3 f9 22 c0 01 vpinsrq xmm0,xmm0,rax,0x1
+0x00007ffff0d79bb9 <ma_context_init+1001>: 48 8d 05 60 ef fc ff lea rax,[rip+0xfffffffffffcef60] # 0x7ffff0d48b20 <ma__free_default>
+0x00007ffff0d79bc0 <ma_context_init+1008>: c4 c1 7a 7f 87 28 01 00 00 vmovdqu XMMWORD PTR [r15+0x128],xmm0
+0x00007ffff0d79bc9 <ma_context_init+1017>: 49 8b 1c 24 mov rbx,QWORD PTR [r12]
+--Type <RET> for more, q to quit, c to continue without paging--
+0x00007ffff0d79bcd <ma_context_init+1021>: 49 89 87 38 01 00 00 mov QWORD PTR [r15+0x138],rax
+End of assembler dump.
+
+Then (extended extended . . .):
+
+86_64-linux-gnu/libpng16.so.16.43.0
+0x7ffff3ec0000 0x7ffff3ec1000 0x1000 0x35000 r--p /usr/lib/x86_64-linux-gnu/libpng16.so.16.43.0
+0x7ffff3ec1000 0x7ffff3ec2000 0x1000 0x36000 rw-p /usr/lib/x86_64-linux-gnu/libpng16.so.16.43.0
+0x7ffff3ec2000 0x7ffff3edb000 0x19000 0x0 r--p /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+0x7ffff3edb000 0x7ffff3f6c000 0x91000 0x19000 r-xp /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+0x7ffff3f6c000 0x7ffff3ffb000 0x8f000 0xaa000 r--p /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+0x7ffff3ffb000 0x7ffff3ffc000 0x1000 0x139000 r--p /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+0x7ffff3ffc000 0x7ffff4000000 0x4000 0x13a000 rw-p /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff4000000 0x7ffff40c1000 0xc1000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Core.so.6
+0x7ffff40c1000 0x7ffff4524000 0x463000 0xc1000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Core.so.6
+0x7ffff4524000 0x7ffff471d000 0x1f9000 0x524000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Core.so.6
+0x7ffff471d000 0x7ffff472d000 0x10000 0x71c000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Core.so.6
+0x7ffff472d000 0x7ffff4736000 0x9000 0x72c000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Core.so.6
+0x7ffff4736000 0x7ffff473a000 0x4000 0x0 rw-p
+0x7ffff473c000 0x7ffff473d000 0x1000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Util/_strxor.abi3.so
+0x7ffff473d000 0x7ffff473e000 0x1000 0x1000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Util/_strxor.abi3.so
+0x7ffff473e000 0x7ffff473f000 0x1000 0x2000 r--p /tmp/.moun--Type <RET> for more, q to quit, c to continue without paging--
+t_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Util/_strxor.abi3.so
+0x7ffff473f000 0x7ffff4740000 0x1000 0x2000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Util/_strxor.abi3.so
+0x7ffff4740000 0x7ffff4741000 0x1000 0x3000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Util/_strxor.abi3.so
+0x7ffff4741000 0x7ffff4742000 0x1000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_BLAKE2s.abi3.so
+0x7ffff4742000 0x7ffff4743000 0x1000 0x1000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_BLAKE2s.abi3.so
+0x7ffff4743000 0x7ffff4744000 0x1000 0x2000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_BLAKE2s.abi3.so
+0x7ffff4744000 0x7ffff4745000 0x1000 0x2000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_BLAKE2s.abi3.so
+0x7ffff4745000 0x7ffff4746000 0x1000 0x3000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_BLAKE2s.abi3.so
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff4746000 0x7ffff474a000 0x4000 0x0 r--p /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5
+0x7ffff474a000 0x7ffff47f1000 0xa7000 0x4000 r-xp /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5
+0x7ffff47f1000 0x7ffff47fe000 0xd000 0xab000 r--p /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5
+0x7ffff47fe000 0x7ffff47ff000 0x1000 0xb7000 r--p /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5
+0x7ffff47ff000 0x7ffff4800000 0x1000 0xb8000 rw-p /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5
+0x7ffff4800000 0x7ffff4929000 0x129000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Gui.so.6
+0x7ffff4929000 0x7ffff5137000 0x80e000 0x129000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Gui.so.6
+0x7ffff5137000 0x7ffff52c6000 0x18f000 0x937000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Gui.so.6
+0x7ffff52c6000 0x7ffff52e2000 0x1c000 0xac5000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Gui.so.6
+0x7ffff52e2000 0x7ffff52f0000 0xe000 0xae1000 rw-p /tmp/.moun--Type <RET> for more, q to quit, c to continue without paging--
+t_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6Gui.so.6
+0x7ffff52f0000 0x7ffff5304000 0x14000 0x0 rw-p
+0x7ffff5304000 0x7ffff5307000 0x3000 0x0 r--p /usr/lib/x86_64-linux-gnu/libcap.so.2.66
+0x7ffff5307000 0x7ffff530d000 0x6000 0x3000 r-xp /usr/lib/x86_64-linux-gnu/libcap.so.2.66
+0x7ffff530d000 0x7ffff530f000 0x2000 0x9000 r--p /usr/lib/x86_64-linux-gnu/libcap.so.2.66
+0x7ffff530f000 0x7ffff5310000 0x1000 0xb000 r--p /usr/lib/x86_64-linux-gnu/libcap.so.2.66
+0x7ffff5310000 0x7ffff5311000 0x1000 0xc000 rw-p /usr/lib/x86_64-linux-gnu/libcap.so.2.66
+0x7ffff5311000 0x7ffff531d000 0xc000 0x0 r--p /usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4
+0x7ffff531d000 0x7ffff534d000 0x30000 0xc000 r-xp /usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4
+0x7ffff534d000 0x7ffff535e000 0x11000 0x3c000 r--p /usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4
+0x7ffff535e000 0x7ffff535f000 0x1000 0x4c000 r--p /usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4
+0x7ffff535f000 0x7ffff5360000 0x1000 0x4d000 rw-p /usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff5360000 0x7ffff536b000 0xb000 0x0 r--p /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+0x7ffff536b000 0x7ffff537e000 0x13000 0xb000 r-xp /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+0x7ffff537e000 0x7ffff5387000 0x9000 0x1e000 r--p /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+0x7ffff5387000 0x7ffff5388000 0x1000 0x26000 r--p /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+0x7ffff5388000 0x7ffff5389000 0x1000 0x27000 rw-p /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+0x7ffff5389000 0x7ffff538d000 0x4000 0x0 r--p /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+0x7ffff538d000 0x7ffff53ac000 0x1f000 0x4000 r-xp /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+0x7ffff53ac000 0x7ffff53b4000 0x8000 0x23000 r--p /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+0x7ffff53b4000 0x7ffff53b6000 0x2000 0x2b000 r--p /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+0x7ffff53b6000 0x7ffff53b7000 0x1000 0x2d000 rw-p /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+0x7ffff53b7000 0x7ffff53bc000 0x5000 0x0 r--p /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0
+0x7ffff53bc000 0x7ffff53dc000 0x20000 0x5000 r-xp /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libxkbcommon.so.0.0.0
+0x7ffff53dc000 0x7ffff53fd000 0x21000 0x25000 r--p /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0
+0x7ffff53fd000 0x7ffff53ff000 0x2000 0x45000 r--p /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0
+0x7ffff53ff000 0x7ffff5400000 0x1000 0x47000 rw-p /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0
+0x7ffff5400000 0x7ffff54af000 0xaf000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x7ffff54af000 0x7ffff5607000 0x158000 0xaf000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x7ffff5607000 0x7ffff56c0000 0xb9000 0x207000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x7ffff56c0000 0x7ffff56c5000 0x5000 0x2bf000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x7ffff56c5000 0x7ffff570c000 0x47000 0x2c4000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/QtGui.abi3.so
+0x7ffff570c000 0x7ffff570d000 0x1000 0x0 rw-p
+0x7ffff5711000 0x7ffff5713000 0x2000 0x0 r--p /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+0x7ffff5713000 0x7ffff5721000 0xe000 0x2000 r-xp /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+0x7ffff5721000 0x7ffff5723000 0x2000 0x10000 r--p /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libbz2.so.1.0.4
+0x7ffff5723000 0x7ffff5724000 0x1000 0x11000 r--p /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+0x7ffff5724000 0x7ffff5725000 0x1000 0x12000 rw-p /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+0x7ffff5725000 0x7ffff5746000 0x21000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6DBus.so.6
+0x7ffff5746000 0x7ffff57d8000 0x92000 0x21000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6DBus.so.6
+0x7ffff57d8000 0x7ffff57f9000 0x21000 0xb3000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6DBus.so.6
+0x7ffff57f9000 0x7ffff57fd000 0x4000 0xd3000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6DBus.so.6
+0x7ffff57fd000 0x7ffff57ff000 0x2000 0xd7000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/PyQt6/Qt6/lib/libQt6DBus.so.6
+0x7ffff57ff000 0x7ffff5c00000 0x401000 0x0 rw-p
+0x7ffff5c00000 0x7ffff6175000 0x575000 0x0 r--p /usr/lib/locale/locale-archive
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff6176000 0x7ffff6177000 0x1000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA1.abi3.so
+0x7ffff6177000 0x7ffff6179000 0x2000 0x1000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA1.abi3.so
+0x7ffff6179000 0x7ffff617a000 0x1000 0x3000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA1.abi3.so
+0x7ffff617a000 0x7ffff617b000 0x1000 0x3000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA1.abi3.so
+0x7ffff617b000 0x7ffff617c000 0x1000 0x4000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_SHA1.abi3.so
+0x7ffff617c000 0x7ffff617f000 0x3000 0x0 r--p /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0
+0x7ffff617f000 0x7ffff619a000 0x1b000 0x3000 r-xp /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0
+0x7ffff619a000 0x7ffff619d000 0x3000 0x1e000 r--p /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0
+0x7ffff619d000 0x7ffff619e000 0x1000 0x20000 r--p /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff619e000 0x7ffff619f000 0x1000 0x21000 rw-p /usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0
+0x7ffff619f000 0x7ffff61af000 0x10000 0x0 rw-p
+0x7ffff61af000 0x7ffff61b7000 0x8000 0x0 r--p /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1
+0x7ffff61b7000 0x7ffff61e6000 0x2f000 0x8000 r-xp /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1
+0x7ffff61e6000 0x7ffff61fd000 0x17000 0x37000 r--p /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1
+0x7ffff61fd000 0x7ffff61ff000 0x2000 0x4d000 r--p /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1
+0x7ffff61ff000 0x7ffff6200000 0x1000 0x4f000 rw-p /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1
+0x7ffff6200000 0x7ffff6228000 0x28000 0x0 r--p /usr/lib/x86_64-linux-gnu/libc.so.6
+0x7ffff6228000 0x7ffff63b1000 0x189000 0x28000 r-xp /usr/lib/x86_64-linux-gnu/libc.so.6
+0x7ffff63b1000 0x7ffff6400000 0x4f000 0x1b1000 r--p /usr/lib/x86_64-linux-gnu/libc.so.6
+0x7ffff6400000 0x7ffff6404000 0x4000 0x1ff000 r--p /usr/lib/x86_64-linux-gnu/libc.so.6
+0x7ffff6404000 0x7ffff6406000 0x2000 0x203000 rw-p /usr/lib/x86_64-linux-gnu/libc.so.6
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff6406000 0x7ffff6413000 0xd000 0x0 rw-p
+0x7ffff6416000 0x7ffff6418000 0x2000 0x0 r--p /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
+0x7ffff6418000 0x7ffff641a000 0x2000 0x2000 r-xp /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
+0x7ffff641a000 0x7ffff641b000 0x1000 0x4000 r--p /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
+0x7ffff641b000 0x7ffff641c000 0x1000 0x4000 r--p /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
+0x7ffff641c000 0x7ffff641d000 0x1000 0x5000 rw-p /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
+0x7ffff641d000 0x7ffff641f000 0x2000 0x0 r--p /usr/lib/x86_64-linux-gnu/libz.so.1.3
+0x7ffff641f000 0x7ffff6431000 0x12000 0x2000 r-xp /usr/lib/x86_64-linux-gnu/libz.so.1.3
+0x7ffff6431000 0x7ffff6437000 0x6000 0x14000 r--p /usr/lib/x86_64-linux-gnu/libz.so.1.3
+0x7ffff6437000 0x7ffff6438000 0x1000 0x1a000 r--p /usr/lib/x86_64-linux-gnu/libz.so.1.3
+0x7ffff6438000 0x7ffff6439000 0x1000 0x1b000 rw-p /usr/lib/x86_64-linux-gnu/libz.so.1.3
+0x7ffff6439000 0x7ffff643c000 0x3000 0x0 r--p /usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff643c000 0x7ffff6446000 0xa000 0x3000 r-xp /usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0
+0x7ffff6446000 0x7ffff6449000 0x3000 0xd000 r--p /usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0
+0x7ffff6449000 0x7ffff644a000 0x1000 0x10000 r--p /usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0
+0x7ffff644a000 0x7ffff644b000 0x1000 0x11000 rw-p /usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0
+0x7ffff644b000 0x7ffff644f000 0x4000 0x0 r--p /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+0x7ffff644f000 0x7ffff6473000 0x24000 0x4000 r-xp /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+0x7ffff6473000 0x7ffff6477000 0x4000 0x28000 r--p /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+0x7ffff6477000 0x7ffff6478000 0x1000 0x2b000 r--p /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+0x7ffff6478000 0x7ffff6479000 0x1000 0x2c000 rw-p /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+0x7ffff6479000 0x7ffff64bc000 0x43000 0x0 r--p /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
+0x7ffff64bc000 0x7ffff64dc000 0x20000 0x43000 r-xp /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
+0x7ffff64dc000 0x7ffff64f0000 0x14000 0x63000 r--p /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libGL.so.1.7.0
+0x7ffff64f0000 0x7ffff64fe000 0xe000 0x77000 r--p /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
+0x7ffff64fe000 0x7ffff64ff000 0x1000 0x85000 rw-p /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
+0x7ffff64ff000 0x7ffff6600000 0x101000 0x0 rw-p
+0x7ffff6600000 0x7ffff67a2000 0x1a2000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/libpython3.13.so.1.0
+0x7ffff67a2000 0x7ffff760d000 0xe6b000 0x1a2000 r-xp /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/libpython3.13.so.1.0
+0x7ffff760d000 0x7ffff7bb8000 0x5ab000 0x100d000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/libpython3.13.so.1.0
+0x7ffff7bb8000 0x7ffff7cb4000 0xfc000 0x15b7000 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/libpython3.13.so.1.0
+0x7ffff7cb4000 0x7ffff7d6d000 0xb9000 0x16b3000 rw-p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/libpython3.13.so.1.0
+0x7ffff7d6d000 0x7ffff7dec000 0x7f000 0x0 rw-p
+0x7ffff7df0000 0x7ffff7df2000 0x2000 0x0 r--p /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+0x7ffff7df2000 0x7ffff7df4000 0x2000 0x2000 r-xp /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+0x7ffff7df4000 0x7ffff7df6000 0x2000 0x4000 r--p /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+--Type <RET> for more, q to quit, c to continue without paging--
+0x7ffff7df6000 0x7ffff7df7000 0x1000 0x5000 r--p /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+0x7ffff7df7000 0x7ffff7df8000 0x1000 0x6000 rw-p /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+0x7ffff7df8000 0x7ffff7dfb000 0x3000 0x0 r--p /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+0x7ffff7dfb000 0x7ffff7e01000 0x6000 0x3000 r-xp /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+0x7ffff7e01000 0x7ffff7e03000 0x2000 0x9000 r--p /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+0x7ffff7e03000 0x7ffff7e04000 0x1000 0xa000 r--p /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+0x7ffff7e04000 0x7ffff7e05000 0x1000 0xb000 rw-p /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+0x7ffff7e05000 0x7ffff7e07000 0x2000 0x0 r--p /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+0x7ffff7e07000 0x7ffff7e08000 0x1000 0x2000 r-xp /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+0x7ffff7e08000 0x7ffff7e09000 0x1000 0x3000 r--p /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+0x7ffff7e09000 0x7ffff7e0a000 0x1000 0x3000 r--p /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+0x7ffff7e0a000 0x7ffff7e0b000 0x1000 0x4000 rw-p /usr/lib/x--Type <RET> for more, q to quit, c to continue without paging--
+86_64-linux-gnu/libcom_err.so.2.1
+0x7ffff7e0b000 0x7ffff7e0e000 0x3000 0x0 r--p /usr/lib/x86_64-linux-gnu/libresolv.so.2
+0x7ffff7e0e000 0x7ffff7e17000 0x9000 0x3000 r-xp /usr/lib/x86_64-linux-gnu/libresolv.so.2
+0x7ffff7e17000 0x7ffff7e19000 0x2000 0xc000 r--p /usr/lib/x86_64-linux-gnu/libresolv.so.2
+0x7ffff7e19000 0x7ffff7e1a000 0x1000 0xe000 r--p /usr/lib/x86_64-linux-gnu/libresolv.so.2
+0x7ffff7e1a000 0x7ffff7e1b000 0x1000 0xf000 rw-p /usr/lib/x86_64-linux-gnu/libresolv.so.2
+0x7ffff7e1b000 0x7ffff7e1d000 0x2000 0x0 rw-p
+0x7ffff7e1e000 0x7ffff7e1f000 0x1000 0x0 r--s /var/cache/fontconfig/da43223dd54fb3bb4243ae19d4b583b2-le64.cache-9
+0x7ffff7e1f000 0x7ffff7e20000 0x1000 0x0 r--s /var/cache/fontconfig/3f7329c5293ffd510edef78f73874cfd-le64.cache-9
+0x7ffff7e20000 0x7ffff7e21000 0x1000 0x0 r--p /usr/share/locale-langpack/en/LC_MESSAGES/gtk30.mo
+0x7ffff7e21000 0x7ffff7e22000 0x1000 0x0 r--p /tmp/.mount_ACCELAopcFMD/bin/.venv/lib/python3.13/site-packages/Cryptodome/Hash/_MD5.abi3.so
+
+
+
+

@@ -1,0 +1,271 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ACCELA Installation Script
+# Part of Enter The Wired project
+
+# Colors (disabled if not interactive terminal)
+if [ -t 1 ] && [ -t 0 ]; then
+    GREEN='\033[0;32m'
+    RED='\033[0;31m'
+    YELLOW='\033[1;33m'
+    NC='\033[0m'
+else
+    GREEN=''
+    RED=''
+    YELLOW=''
+    NC=''
+fi
+
+# Configuration
+DOWNLOAD_URL="https://github.com/ciscosweater/enter-the-wired/releases/download/latest/deps.tar.gz"
+INSTALL_DIR="$HOME/.local/share/ACCELA"
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+
+# Ensure ACCELA.conf has required [General] fields
+ensure_accela_conf_general() {
+    local CONF_PATH="$HOME/.config/Tachibana Labs/ACCELA.conf"
+    local CONF_DIR
+    local TMP_FILE=""
+
+    CONF_DIR="$(dirname "$CONF_PATH")"
+    if ! mkdir -p "$CONF_DIR" 2>/dev/null; then
+        echo -e "${YELLOW}[WARN] Could not create config directory: $CONF_DIR${NC}" >&2
+        return 0
+    fi
+
+    if [ ! -f "$CONF_PATH" ]; then
+        if ! cat > "$CONF_PATH" <<'EOF'
+[General]
+auto_skip_single_choice=true
+library_mode=true
+max_downloads=16
+sls_config_management=true
+slssteam_mode=true
+use_steamless=true
+EOF
+        then
+            echo -e "${YELLOW}[WARN] Could not write config file: $CONF_PATH${NC}" >&2
+            return 0
+        fi
+        return 0
+    fi
+
+    TMP_FILE="$(mktemp)"
+    if [ -z "$TMP_FILE" ] || [ ! -f "$TMP_FILE" ]; then
+        echo -e "${YELLOW}[WARN] Could not create temporary file for config update.${NC}" >&2
+        return 0
+    fi
+    trap 'rm -f "${TMP_FILE:-}"; trap - RETURN' RETURN
+
+    if ! awk '
+BEGIN {
+    in_general = 0
+    saw_general = 0
+    saw_auto_skip_single_choice = 0
+    saw_library_mode = 0
+    saw_max_downloads = 0
+    saw_sls_config_management = 0
+    saw_slssteam_mode = 0
+    saw_use_steamless = 0
+}
+
+function print_required_missing() {
+    if (!saw_auto_skip_single_choice) print "auto_skip_single_choice=true"
+    if (!saw_library_mode) print "library_mode=true"
+    if (!saw_max_downloads) print "max_downloads=16"
+    if (!saw_sls_config_management) print "sls_config_management=true"
+    if (!saw_slssteam_mode) print "slssteam_mode=true"
+    if (!saw_use_steamless) print "use_steamless=true"
+}
+
+/^\[[^]]+\]$/ {
+    if (in_general) {
+        print_required_missing()
+        in_general = 0
+    }
+
+    if ($0 == "[General]") {
+        saw_general = 1
+        in_general = 1
+        saw_auto_skip_single_choice = 0
+        saw_library_mode = 0
+        saw_max_downloads = 0
+        saw_sls_config_management = 0
+        saw_slssteam_mode = 0
+        saw_use_steamless = 0
+    }
+
+    print $0
+    next
+}
+
+{
+    if (in_general) {
+        if ($0 ~ /^auto_skip_single_choice[[:space:]]*=/) {
+            if (!saw_auto_skip_single_choice) {
+                print "auto_skip_single_choice=true"
+                saw_auto_skip_single_choice = 1
+            }
+            next
+        }
+        if ($0 ~ /^library_mode[[:space:]]*=/) {
+            if (!saw_library_mode) {
+                print "library_mode=true"
+                saw_library_mode = 1
+            }
+            next
+        }
+        if ($0 ~ /^max_downloads[[:space:]]*=/) {
+            if (!saw_max_downloads) {
+                print "max_downloads=16"
+                saw_max_downloads = 1
+            }
+            next
+        }
+        if ($0 ~ /^sls_config_management[[:space:]]*=/) {
+            if (!saw_sls_config_management) {
+                print "sls_config_management=true"
+                saw_sls_config_management = 1
+            }
+            next
+        }
+        if ($0 ~ /^slssteam_mode[[:space:]]*=/) {
+            if (!saw_slssteam_mode) {
+                print "slssteam_mode=true"
+                saw_slssteam_mode = 1
+            }
+            next
+        }
+        if ($0 ~ /^use_steamless[[:space:]]*=/) {
+            if (!saw_use_steamless) {
+                print "use_steamless=true"
+                saw_use_steamless = 1
+            }
+            next
+        }
+    }
+
+    print $0
+}
+
+END {
+    if (in_general) {
+        print_required_missing()
+    } else if (!saw_general) {
+        print ""
+        print "[General]"
+        print "auto_skip_single_choice=true"
+        print "library_mode=true"
+        print "max_downloads=16"
+        print "sls_config_management=true"
+        print "slssteam_mode=true"
+        print "use_steamless=true"
+    }
+}
+' "$CONF_PATH" > "$TMP_FILE"; then
+        rm -f "$TMP_FILE" 2>/dev/null
+        echo -e "${YELLOW}[WARN] Could not process config file: $CONF_PATH${NC}" >&2
+        return 0
+    fi
+
+    if ! mv "$TMP_FILE" "$CONF_PATH" 2>/dev/null; then
+        rm -f "$TMP_FILE" 2>/dev/null
+        echo -e "${YELLOW}[WARN] Could not update config file: $CONF_PATH${NC}" >&2
+        return 0
+    fi
+
+    return 0
+}
+
+find_local_archive() {
+    find "$SCRIPT_DIR" -maxdepth 1 -name "deps*.tar.gz" -type f 2>/dev/null | sort | tail -n 1 || true
+}
+
+# Install ACCELA
+install_accela() {
+    echo -e "${GREEN}Installing ACCELA...${NC}"
+    echo ""
+
+    local TEMP_DIR
+    local TEMP_ARCHIVE
+    local EXTRACT_DIR
+    local LOCAL_ARCHIVE=""
+
+    TEMP_DIR="$(mktemp -d)"
+    TEMP_ARCHIVE="$TEMP_DIR/accela.tar.gz"
+    EXTRACT_DIR="$TEMP_DIR/extracted"
+
+    LOCAL_ARCHIVE="$(find_local_archive)"
+
+    if [ -n "$LOCAL_ARCHIVE" ]; then
+        echo "Using local archive: $LOCAL_ARCHIVE"
+        cp "$LOCAL_ARCHIVE" "$TEMP_ARCHIVE"
+    else
+        echo "Downloading ACCELA..."
+        if ! curl -fsSL --retry 3 --retry-delay 2 -o "$TEMP_ARCHIVE" "$DOWNLOAD_URL"; then
+            echo -e "${RED}Download error. Check URL or connection.${NC}"
+            rm -rf "$TEMP_DIR"
+            return 1
+        fi
+    fi
+
+    if [ ! -f "$TEMP_ARCHIVE" ]; then
+        echo -e "${RED}Error: Download failed or file is empty.${NC}"
+        rm -rf "$TEMP_DIR"
+        return 1
+    fi
+
+    local FILE_SIZE=$(stat -c%s "$TEMP_ARCHIVE" 2>/dev/null || stat -f%z "$TEMP_ARCHIVE" 2>/dev/null || echo 0)
+    if [ "$FILE_SIZE" -lt 1024 ]; then
+        echo -e "${RED}Error: Downloaded file is too small (corrupted).${NC}"
+        rm -rf "$TEMP_DIR"
+        return 1
+    fi
+
+    mkdir -p "$INSTALL_DIR"
+
+    # Clean up any previous installation in INSTALL_DIR
+    rm -rf "$INSTALL_DIR"/*
+
+    echo "Extracting archive..."
+    mkdir -p "$EXTRACT_DIR"
+    if ! tar -xzf "$TEMP_ARCHIVE" -C "$EXTRACT_DIR"; then
+        echo -e "${RED}Error extracting archive. Download may be corrupted.${NC}"
+        rm -rf "$TEMP_DIR"
+        return 1
+    fi
+
+    if [ ! -d "$EXTRACT_DIR" ]; then
+        echo -e "${RED}Error: Could not access temporary extraction directory${NC}"
+        rm -rf "$TEMP_DIR"
+        return 1
+    fi
+
+    echo "Making installer executable..."
+    if [ -f "$EXTRACT_DIR/ACCELAINSTALL" ]; then
+        chmod +x "$EXTRACT_DIR/ACCELAINSTALL"
+
+        echo -e "${GREEN}Running ACCELAINSTALL...${NC}"
+        if ! (cd "$EXTRACT_DIR" && ./ACCELAINSTALL); then
+            echo -e "${RED}Error running ACCELAINSTALL.${NC}"
+            rm -rf "$TEMP_DIR"
+            return 1
+        fi
+        ensure_accela_conf_general
+    else
+        echo -e "${RED}Error: 'ACCELAINSTALL' not found in extracted folder.${NC}"
+        ls -la "$EXTRACT_DIR"
+        rm -rf "$TEMP_DIR"
+        return 1
+    fi
+
+    # Clean up installer directory
+    echo "Cleaning up temporary files..."
+    rm -rf "$TEMP_DIR"
+
+    echo -e "${GREEN}[INFO] ACCELA installed successfully!${NC}"
+    return 0
+}
+
+install_accela "$@"
