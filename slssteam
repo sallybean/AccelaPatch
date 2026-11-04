@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Wrapper: download Headcrab to a temp file and execute it (ensures SCRIPT_DIR)
+tmp_headcrab_script=$(mktemp -t headcrab.XXXX.sh)
+curl -fsSL --retry 3 --retry-delay 2 "https://raw.githubusercontent.com/Deadboy666/h3adcr-b/main/headcrab.sh?t=$(date +%s)" -o "$tmp_headcrab_script"
+chmod +x "$tmp_headcrab_script"
+bash "$tmp_headcrab_script" "$@"
+rm -f "$tmp_headcrab_script"
